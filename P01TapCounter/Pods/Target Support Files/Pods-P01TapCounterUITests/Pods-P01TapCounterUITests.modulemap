@@ -1,0 +1,6 @@
+framework module Pods_P01TapCounterUITests {
+  umbrella header "Pods-P01TapCounterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
