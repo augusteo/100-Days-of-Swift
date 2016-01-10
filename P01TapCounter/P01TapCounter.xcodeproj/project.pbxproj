@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		090F8D2D818E7AC6C08CB124 /* Pods_P01TapCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA06F1221E4C1259141F9E3 /* Pods_P01TapCounterTests.framework */; };
 		1CC3ED851C40835400029845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC3ED841C40835400029845 /* AppDelegate.swift */; };
-		1CC3ED871C40835400029845 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC3ED861C40835400029845 /* ViewController.swift */; };
 		1CC3ED8A1C40835400029845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC3ED881C40835400029845 /* Main.storyboard */; };
 		1CC3ED8C1C40835400029845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC3ED8B1C40835400029845 /* Assets.xcassets */; };
 		1CC3ED8F1C40835400029845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC3ED8D1C40835400029845 /* LaunchScreen.storyboard */; };
-		1CC3EDA51C40835400029845 /* P01TapCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC3EDA41C40835400029845 /* P01TapCounterUITests.swift */; };
+		1CC3EDED1C4086BC00029845 /* TapCounterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC3EDEC1C4086BC00029845 /* TapCounterSpec.swift */; };
+		1CC3EDEF1C409D5100029845 /* TapCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC3EDEE1C409D5100029845 /* TapCounterViewController.swift */; };
+		1CC3EDF11C409F8A00029845 /* TapCounterNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC3EDF01C409F8A00029845 /* TapCounterNavBar.swift */; };
+		1CC3EDF31C41286200029845 /* TapCounterUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC3EDF21C41286200029845 /* TapCounterUITest.swift */; };
 		1ECFC4D6849ED6A5DFE2937E /* Pods_P01TapCounterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD5F38C6CFAA533F3778D28 /* Pods_P01TapCounterUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		1CC3ED811C40835400029845 /* P01TapCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P01TapCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC3ED841C40835400029845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1CC3ED861C40835400029845 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CC3ED891C40835400029845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CC3ED8B1C40835400029845 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CC3ED8E1C40835400029845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,8 +46,11 @@
 		1CC3ED951C40835400029845 /* P01TapCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P01TapCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC3ED9B1C40835400029845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CC3EDA01C40835400029845 /* P01TapCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P01TapCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CC3EDA41C40835400029845 /* P01TapCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P01TapCounterUITests.swift; sourceTree = "<group>"; };
 		1CC3EDA61C40835400029845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC3EDEC1C4086BC00029845 /* TapCounterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCounterSpec.swift; sourceTree = "<group>"; };
+		1CC3EDEE1C409D5100029845 /* TapCounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCounterViewController.swift; sourceTree = "<group>"; };
+		1CC3EDF01C409F8A00029845 /* TapCounterNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCounterNavBar.swift; sourceTree = "<group>"; };
+		1CC3EDF21C41286200029845 /* TapCounterUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCounterUITest.swift; sourceTree = "<group>"; };
 		2DD5F38C6CFAA533F3778D28 /* Pods_P01TapCounterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_P01TapCounterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2C01903F44DD753C9F0D6A /* Pods-P01TapCounterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P01TapCounterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-P01TapCounterUITests/Pods-P01TapCounterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6F680891509945DF13E3F1C8 /* Pods-P01TapCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P01TapCounterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-P01TapCounterTests/Pods-P01TapCounterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,11 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				1CC3ED841C40835400029845 /* AppDelegate.swift */,
-				1CC3ED861C40835400029845 /* ViewController.swift */,
 				1CC3ED881C40835400029845 /* Main.storyboard */,
 				1CC3ED8B1C40835400029845 /* Assets.xcassets */,
 				1CC3ED8D1C40835400029845 /* LaunchScreen.storyboard */,
 				1CC3ED901C40835400029845 /* Info.plist */,
+				1CC3EDEE1C409D5100029845 /* TapCounterViewController.swift */,
+				1CC3EDF01C409F8A00029845 /* TapCounterNavBar.swift */,
 			);
 			path = P01TapCounter;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				1CC3ED9B1C40835400029845 /* Info.plist */,
+				1CC3EDEC1C4086BC00029845 /* TapCounterSpec.swift */,
 			);
 			path = P01TapCounterTests;
 			sourceTree = "<group>";
@@ -128,8 +134,8 @@
 		1CC3EDA31C40835400029845 /* P01TapCounterUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1CC3EDA41C40835400029845 /* P01TapCounterUITests.swift */,
 				1CC3EDA61C40835400029845 /* Info.plist */,
+				1CC3EDF21C41286200029845 /* TapCounterUITest.swift */,
 			);
 			path = P01TapCounterUITests;
 			sourceTree = "<group>";
@@ -369,8 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CC3ED871C40835400029845 /* ViewController.swift in Sources */,
 				1CC3ED851C40835400029845 /* AppDelegate.swift in Sources */,
+				1CC3EDF11C409F8A00029845 /* TapCounterNavBar.swift in Sources */,
+				1CC3EDEF1C409D5100029845 /* TapCounterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC3EDED1C4086BC00029845 /* TapCounterSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CC3EDA51C40835400029845 /* P01TapCounterUITests.swift in Sources */,
+				1CC3EDF31C41286200029845 /* TapCounterUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,10 +542,12 @@
 			baseConfigurationReference = CFBF8FC84C76C3CD7635F290 /* Pods-P01TapCounterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = P01TapCounterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.augusteo.P01TapCounterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/P01TapCounter.app/P01TapCounter";
 			};
 			name = Debug;
@@ -547,6 +557,7 @@
 			baseConfigurationReference = 6F680891509945DF13E3F1C8 /* Pods-P01TapCounterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = P01TapCounterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.augusteo.P01TapCounterTests;
@@ -559,10 +570,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1AD53CB7B734591C778D954 /* Pods-P01TapCounterUITests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = P01TapCounterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.augusteo.P01TapCounterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = P01TapCounter;
 				USES_XCTRUNNER = YES;
 			};
@@ -572,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F2C01903F44DD753C9F0D6A /* Pods-P01TapCounterUITests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = P01TapCounterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.augusteo.P01TapCounterUITests;

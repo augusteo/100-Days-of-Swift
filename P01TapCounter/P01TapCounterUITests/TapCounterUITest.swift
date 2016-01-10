@@ -1,6 +1,6 @@
 //
-//  P01TapCounterUITests.swift
-//  P01TapCounterUITests
+//  TapCounterUITest.swift
+//  P01TapCounter
 //
 //  Created by vic on 9/01/2016.
 //  Copyright © 2016 augusteo. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class P01TapCounterUITests: XCTestCase {
+class TapCounterUITest: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -28,9 +28,51 @@ class P01TapCounterUITests: XCTestCase {
         super.tearDown()
     }
     
+    // since we couldn't test the text of the UILabel, we couldn't do much here.
+    // all we are doing is testing whether we can tap the buttons.
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let tapMeButton = app.buttons["Tap me!"]
+        let resetButton = app.navigationBars["Counter"].buttons["Reset"]
+        let counterLabel = app.staticTexts["0"]
+        
+        XCTAssert(counterLabel.exists)
+        
+        tapMeButton.tap()
+        tapMeButton.tap()
+        tapMeButton.tap()
+        tapMeButton.tap()
+        
+        resetButton.tap()
+        
+        tapMeButton.tap()
+        tapMeButton.tap()
+        
+        resetButton.tap()
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
