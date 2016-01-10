@@ -37,7 +37,9 @@ class TapCounterUITest: XCTestCase {
         let resetButton = app.navigationBars["Counter"].buttons["Reset"]
         let counterLabel = app.staticTexts["0"]
         
-        XCTAssert(counterLabel.exists)
+        XCTAssertTrue(tapMeButton.exists)
+        XCTAssertTrue(resetButton.exists)
+        XCTAssertTrue(counterLabel.exists)
         
         tapMeButton.tap()
         tapMeButton.tap()
