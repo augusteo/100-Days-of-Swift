@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K4Q-UB-VIY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tap Hold Counter View Controller-->
+        <scene sceneID="PjU-io-tN0">
+            <objects>
+                <viewController storyboardIdentifier="TapCounterVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K4Q-UB-VIY" customClass="TapHoldCounterViewController" customModule="P02TapHoldCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tLW-AN-ldv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Na7-dF-bu3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3p7-jO-Rka">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbo-NM-rR1">
+                                <rect key="frame" x="16" y="292" width="343" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EC5-Nn-K4E">
+                                <rect key="frame" x="16" y="343" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HN8-s0-WVD"/>
+                                </constraints>
+                                <state key="normal" title="Tap me!"/>
+                                <connections>
+                                    <action selector="tapButtonDragged:" destination="K4Q-UB-VIY" eventType="touchDragInside" id="6MZ-qU-iyX"/>
+                                    <action selector="tapButtonTapped:" destination="K4Q-UB-VIY" eventType="touchUpInside" id="dkK-t3-u3I"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jg5-Pa-Dv8" customClass="TapCounterNavBar" customModule="P02TapHoldCounter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Counter" id="kp6-EH-gXU">
+                                        <barButtonItem key="leftBarButtonItem" title="Reset" style="plain" id="aBt-3T-pw2">
+                                            <connections>
+                                                <action selector="resetBarButtonTapped:" destination="K4Q-UB-VIY" id="gOm-uA-Bwi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EC5-Nn-K4E" firstAttribute="width" secondItem="Hbo-NM-rR1" secondAttribute="width" id="ASk-VC-DaY"/>
+                            <constraint firstItem="Hbo-NM-rR1" firstAttribute="centerX" secondItem="3p7-jO-Rka" secondAttribute="centerX" id="CZE-Hl-qUO"/>
+                            <constraint firstItem="Hbo-NM-rR1" firstAttribute="leading" secondItem="3p7-jO-Rka" secondAttribute="leadingMargin" id="ILd-bO-0gF"/>
+                            <constraint firstItem="EC5-Nn-K4E" firstAttribute="centerX" secondItem="3p7-jO-Rka" secondAttribute="centerX" id="UCs-98-xb3"/>
+                            <constraint firstItem="Hbo-NM-rR1" firstAttribute="trailing" secondItem="3p7-jO-Rka" secondAttribute="trailingMargin" id="mbv-z3-uOQ"/>
+                            <constraint firstItem="Hbo-NM-rR1" firstAttribute="centerY" secondItem="3p7-jO-Rka" secondAttribute="centerY" constant="-20" id="puz-6W-tGR"/>
+                            <constraint firstItem="EC5-Nn-K4E" firstAttribute="top" secondItem="Hbo-NM-rR1" secondAttribute="bottom" constant="8" id="rNl-MM-9nJ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="Hbo-NM-rR1" id="SyI-Yz-3k1"/>
+                        <outlet property="resetBarButton" destination="aBt-3T-pw2" id="2cN-Pc-PCM"/>
+                        <outlet property="tapButton" destination="EC5-Nn-K4E" id="n0g-7G-zMS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZF-aa-3z8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="359.5" y="362.5"/>
+        </scene>
+    </scenes>
+</document>

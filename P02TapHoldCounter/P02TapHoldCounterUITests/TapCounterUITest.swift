@@ -8,7 +8,7 @@
 
 import XCTest
 
-class TapCounterUITest: XCTestCase {
+class TapHoldCounterUITest: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -42,21 +42,21 @@ class TapCounterUITest: XCTestCase {
         
         tapMeButton.tap()
         tapMeButton.tap()
-        
+
         XCTAssertTrue(app.staticTexts["2"].exists)
         
         tapMeButton.tap()
         tapMeButton.tap()
         tapMeButton.tap()
-        
+
         XCTAssertTrue(app.staticTexts["5"].exists)
-        
+
         resetButton.tap()
-        
+
         XCTAssertTrue(app.staticTexts["0"].exists)
         
         tapMeButton.tap()
-        
+
         XCTAssertTrue(app.staticTexts["1"].exists)
         
     }
